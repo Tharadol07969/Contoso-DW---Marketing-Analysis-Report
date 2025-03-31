@@ -1,7 +1,7 @@
 # Contoso DW - Marketing Analysis Report
 
-📊 This report is based on data from the Contoso Data Warehouse.
-🏬 Contoso is a simulated online retail company aiming to achieve its sales targets.
+ 📊 This report is based on data from the Contoso Data Warehouse.
+ 🏬 Contoso is a simulated online retail company aiming to achieve its sales targets.
 
 ## Fact and Dimension Tables
 ### Fact Table
