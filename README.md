@@ -34,7 +34,7 @@ Contoso is a simulated online retail company aiming to achieve its sales targets
 ### Channel Page
 - Displays sales details by channel.
 - Includes a table showing total sales and YoY% change by continent, country, state, store, and online store.
-- Filters available for country, channel, and category.
+- Filters available for category, continent, and country.
 
 ![Channel Page](./Channel.jpg)
 
