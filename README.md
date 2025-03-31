@@ -25,7 +25,7 @@ Contoso is a simulated online retail company aiming to achieve its sales targets
 ## Report and Visualization
 ### Overview Page
 - Displays total revenue, total profit, profit margin by year, and Year-over-Year (YoY) % Change.
-- Includes line charts for total revenue by year, total revenue by continent, and total sales and gross profit by category.
+- Includes charts for total revenue by year, total revenue by continent, and total sales and gross profit by category.
 - Annual sales can be filtered by year.
 
 ![Overview Page](./Overview.jpg)
