@@ -29,7 +29,7 @@
 - Annual sales can be filtered by year.
 
 ![Overview Page](./Overview.jpg)
-![Year Filter](./Filter.jpg)
+![Year Filter](./Filters.jpg)
 
 ### Channel Page
 - Displays sales details by channel.
