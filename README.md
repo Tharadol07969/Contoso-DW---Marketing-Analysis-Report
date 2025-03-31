@@ -1,31 +1,29 @@
 # Contoso DW - Marketing Analysis Report
 
-Fact Table: FactStrategyPlan → เก็บข้อมูลธุรกรรมการขาย
+## Fact and Dimension Tables
+- **Fact Table:** `FactStrategyPlan` - Stores sales transaction data.
+- **Dimension Tables:** `Account`, `Date`, `Entity`, `Product Category`, `Scenario` - Provide detailed context about transactions.
 
-Dimension Tables: Account, Date, Entity, Product Category, Scenario → ให้รายละเอียดเกี่ยวกับธุรกรรม
+## Data Preparation
+### Loading and Cleaning Data
+- Imported the dataset into Power BI Desktop.
+- Inspected and cleaned each table to remove duplicates and errors, ensuring no outliers were present.
+- Established relationships between tables within the data model.
+![Data Model Relationships](./Data%20Model.jpg)
 
-Data Preparation
-Loading and Cleaning Data
-
-Loaded the dataset into Power BI Desktop.
-Inspected and cleaned each table to remove duplicates and errors. Ensured there were no outliers in the table.
-
-Established relationships between tables in the data model.
-![Data Model Relationships](./Data Model.jpg)
-
-### Report and Visualization
-1. **Overview Page**
+## Report and Visualization
+### Overview Page
 ![Overview Page](./Overview.jpg)
 ![Year Filter](./Filter.jpg)
 
-2. **Channel Page**
+### Channel Page
 ![Channel Page](./Channel.jpg)
 
-3. **COGS Page**
+### Cost of Goods Sold (COGS) Page
 ![COGs Page](./COGs.jpg)
 
-4. **Expense Page**
+### Expense Page
 ![Expense Page](./Expense.jpg)
 
-### Conclusion
-You can download the Power BI report (`.pbix` file) for more detailed insights. Thank you for reviewing this report.
+## Conclusion
+For more detailed insights, you can download the Power BI report (`.pbix` file). Thank you for reviewing this report.
