@@ -1,22 +1,31 @@
 # Contoso DW - Marketing Analysis Report
 
-## File Details
+Fact Table: FactStrategyPlan → เก็บข้อมูลธุรกรรมการขาย
 
-### Contoso DW - Marketing Analysis Report.pbix
+Dimension Tables: Account, Date, Entity, Product Category, Scenario → ให้รายละเอียดเกี่ยวกับธุรกรรม
 
-The `Contoso DW - Marketing Analysis Report.pbix` file is a Power BI report created using Microsoft Power BI Desktop. This file consists of marketing data analysis and visualizations from the Contoso Data Warehouse (DW). It includes dashboards, charts, and graphs that provide an overview of marketing performance, trends, and key metrics.
+Data Preparation
+Loading and Cleaning Data
 
-#### Content in the File
+Loaded the dataset into Power BI Desktop.
+Inspected and cleaned each table to remove duplicates and errors. Ensured there were no outliers in the table.
 
-- **Marketing Dashboard**: Displays an overview of marketing performance over a specified period.
-- **Sales Graphs**: Shows sales figures over time and compares different products or campaigns.
+Established relationships between tables in the data model.
+![Data Model Relationships](./Data Model.jpg)
 
-#### Usage
+### Report and Visualization
+1. **Overview Page**
+![Overview Page](./Overview.jpg)
+![Year Filter](./Filter.jpg)
 
-1. Open the `Contoso DW - Marketing Analysis Report.pbix` file in Power BI Desktop or Power BI Service.
-2. Explore and analyze the marketing data presented in the report.
-3. You can customize and add new analyses as needed.
+2. **Channel Page**
+![Channel Page](./Channel.jpg)
 
-#### Improving the Report
+3. **COGS Page**
+![COGs Page](./COGs.jpg)
 
-If you want to improve or add information to the report, you can open the file in Power BI Desktop and make the necessary changes. Then, save the file and upload the updated file back to this repository.
+4. **Expense Page**
+![Expense Page](./Expense.jpg)
+
+### Conclusion
+You can download the Power BI report (`.pbix` file) for more detailed insights. Thank you for reviewing this report.
