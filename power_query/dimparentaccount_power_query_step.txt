@@ -1,0 +1,11 @@
+let
+    Source = Csv.Document(File.Contents("D:\งาน\Datacamp\Learn\Power BI\1.Introduction to Power BI\Datasets\Contoso DW\DimAccount(Fixed).csv"),[Delimiter=",", Columns=7, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"AccountDescription", type text}, {"AccountKey", Int64.Type}, {"AccountLabel", Int64.Type}, {"AccountName", type text}, {"AccountType", type text}, {"ParentAccountKey", Int64.Type}, {"ValueType", type text}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"AccountDescription", "AccountKey", "ValueType"}),
+    #"Reordered Columns" = Table.ReorderColumns(#"Removed Columns",{"AccountLabel", "AccountName", "ParentAccountKey", "AccountType"}),
+    #"Removed Columns1" = Table.RemoveColumns(#"Reordered Columns",{"AccountName", "AccountLabel"}),
+    #"Removed Duplicates" = Table.Distinct(#"Removed Columns1"),
+    #"Sorted Rows" = Table.Sort(#"Removed Duplicates",{{"ParentAccountKey", Order.Ascending}})
+in
+    #"Sorted Rows"

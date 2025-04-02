@@ -1,0 +1,9 @@
+let
+    Source = Csv.Document(File.Contents("D:\งาน\Datacamp\Learn\Power BI\1.Introduction to Power BI\Datasets\Contoso DW\DimProductCategory.csv"),[Delimiter=",", Columns=5, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}, {"Column2", type text}, {"Column3", type text}, {"Column4", type text}, {"Column5", type text}}),
+    #"Removed Top Rows" = Table.Skip(#"Changed Type",1),
+    #"Promoted Headers" = Table.PromoteHeaders(#"Removed Top Rows", [PromoteAllScalars=true]),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Promoted Headers",{{"ProductCategoryKey", Int64.Type}, {"ProductCategoryLabel", Int64.Type}, {"ProductCategoryName", type text}, {"ProductCategoryDescription", type text}, {"ETLLoadID", Int64.Type}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type1",{"ProductCategoryLabel", "ETLLoadID", "ProductCategoryDescription"})
+in
+    #"Removed Columns"

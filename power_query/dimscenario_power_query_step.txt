@@ -1,0 +1,7 @@
+let
+    Source = Csv.Document(File.Contents("D:\งาน\Datacamp\Learn\Power BI\1.Introduction to Power BI\Datasets\Contoso DW\DimScenario.csv"),[Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"ScenarioKey", Int64.Type}, {"ScenarioLabel", Int64.Type}, {"ScenarioName", type text}, {"ScenarioDescription", type text}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"ScenarioLabel", "ScenarioDescription"})
+in
+    #"Removed Columns"

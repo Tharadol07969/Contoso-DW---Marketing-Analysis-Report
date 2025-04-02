@@ -1,0 +1,8 @@
+let
+    Source = Excel.Workbook(File.Contents("D:\งาน\Datacamp\Learn\Power BI\1.Introduction to Power BI\Datasets\Contoso DW\FactStrategyPlan.xlsx"), null, true),
+    FactStrategyPlan_Sheet = Source{[Item="FactStrategyPlan",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(FactStrategyPlan_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"StrategyPlanKey", Int64.Type}, {"Datekey", type datetime}, {"EntityKey", Int64.Type}, {"ScenarioKey", Int64.Type}, {"AccountKey", Int64.Type}, {"CurrencyKey", Int64.Type}, {"ProductCategoryKey", Int64.Type}, {"Amount", type number}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"CurrencyKey"})
+in
+    #"Removed Columns"

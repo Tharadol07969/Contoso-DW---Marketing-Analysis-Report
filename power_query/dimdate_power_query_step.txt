@@ -1,0 +1,6 @@
+let
+    Source = Csv.Document(File.Contents("D:\งาน\Datacamp\Learn\Power BI\1.Introduction to Power BI\Datasets\Contoso DW\DimDate.csv"),[Delimiter=",", Columns=15, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Datekey", type date}, {"DayofMonth", Int64.Type}, {"MonthNumber", Int64.Type}, {"FirstOfMonth", type date}, {"ShortMonth", type text}, {"MonthName", type text}, {"MonthNumberYear", type date}, {"week", Int64.Type}, {"WeekNumber", Int64.Type}, {"DayOfWeek", Int64.Type}, {"QuarterFull", type text}, {"Qrt", type text}, {"QuarterYear", type date}, {"Year", Int64.Type}, {"FirstOfYear", type date}})
+in
+    #"Changed Type"

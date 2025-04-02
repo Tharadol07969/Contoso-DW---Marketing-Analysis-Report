@@ -1,0 +1,21 @@
+﻿AccountKey,AccountName,ParentAccountKey
+4,Sale Revenue,2
+5,Cost of Goods Sold,4
+6,"Selling, General & Administrative Expenses",3
+7,Administration Expense,3
+8,IT Cost,3
+9,Human Capital,3
+10,"Light, Heat, Communication Cost",3
+11,Property Costs,3
+12,Other Expenses,3
+13,Marketing Cost,3
+14,Holiday Ad Cost,3
+15,Spring Ad Cost,3
+16,Back-to-School Ad Cost,3
+17,Business Ad Cost,3
+18,Tax Time / Summer Ad Cost,3
+19,Taxation,1
+20,Radio & TV,3
+21,Print,3
+22,Internet,3
+23,Other,3

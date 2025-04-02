@@ -1,0 +1,8 @@
+let
+    Source = Excel.Workbook(File.Contents("D:\งาน\Datacamp\Learn\Power BI\1.Introduction to Power BI\Datasets\Contoso DW\DimEntity(Fixed).csv.xlsx"), null, true),
+    EntityStore_Sheet = Source{[Item="EntityStore",Kind="Sheet"]}[Data],
+    #"Promoted Headers" = Table.PromoteHeaders(EntityStore_Sheet, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"EntityKey", Int64.Type}, {"ParentEntityKey", Int64.Type}, {"ParentEntityLabel", type text}, {"EntityName", type text}, {"EntityType", type text}, {"EntityState", Int64.Type}, {"EntityCountry", Int64.Type}, {"EntityGroup", Int64.Type}}),
+    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"ParentEntityKey", "ParentEntityLabel"})
+in
+    #"Removed Columns"
