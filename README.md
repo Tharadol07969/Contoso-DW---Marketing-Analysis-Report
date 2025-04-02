@@ -52,7 +52,6 @@ The analysis is based on data sourced from the Contoso Data Warehouse. The key t
 ### Data Model Relationships
 - Established robust relationships among the tables to create a cohesive data model.
 - Ensured that the **FactStrategyPlan** table aligns accurately with all dimensional tables.
-> ![Data Model Screenshot](screenshots/data_model.jpg)
 
 ---
 
@@ -60,24 +59,23 @@ The analysis is based on data sourced from the Contoso Data Warehouse. The key t
 
 ### Overview Page
 - **Key Metrics**: Displays total revenue, total profit, profit margin by year, and YoY % Change.
-- **Visualizations**: Features charts for annual revenue, revenue by continent, and sales & gross profit by product category.
+- **Visualizations**: Includes charts for annual revenue, revenue by continent, and sales & gross profit by product category.
 - **Filter Options**: Users can filter annual sales data by year.
 
 **Explanation**:  
-This page provides a high-level overview of overall marketing performance, highlighting trends and potential areas for improvement.
+The Overview Page provides a high-level summary of overall marketing performance. It allows stakeholders to quickly gauge the company’s financial health and understand macro-level trends, such as changes in revenue and profit margins over time. This page is essential for identifying broad trends and areas that warrant further investigation.
 
 > ![Overview Screenshot](screenshots/overview_page.jpg)
-> ![Year Filter Screenshot](screenshots/year_filter.jpg)
 
 ---
 
 ### Channel Page
-- **Sales Breakdown**: Presents detailed sales data by channel.
-- **Hierarchical Details**: Includes a table displaying total sales and YoY % Change segmented by continent, country, state, store, and online store.
-- **Interactive Filters**: Allows filtering by category, continent, and country.
+- **Sales Breakdown**: Presents detailed sales data segmented by channel.
+- **Hierarchical Details**: Includes a table displaying total sales and YoY % Change by continent, country, state, store, and online store.
+- **Interactive Filters**: Enables filtering by category, continent, and country.
 
 **Explanation**:  
-The Channel Page facilitates granular analysis of sales performance across different channels and geographies, supporting targeted marketing strategies.
+The Channel Page facilitates a granular analysis of sales performance across various distribution channels. It helps determine which channels are most effective in driving sales and profitability. This information is crucial for optimizing channel strategies and ensuring resources are allocated effectively based on regional or channel-specific performance.
 
 > ![Channel Screenshot](screenshots/channel_page.jpg)
 
@@ -88,7 +86,7 @@ The Channel Page facilitates granular analysis of sales performance across diffe
 - **Filter Options**: Users can filter data by product category.
 
 **Explanation**:  
-This page offers insights into product-level financial performance, enabling comparisons of sales and COGS across different periods.
+The COGS Page offers insights into product-level financial performance. It allows decision-makers to compare sales and associated costs, thereby identifying which product categories are the most profitable. This analysis is vital for cost control, pricing strategy, and assessing the impact of operational efficiencies on profitability.
 
 > ![COGS Screenshot](screenshots/cogs_page.jpg)
 
@@ -99,7 +97,7 @@ This page offers insights into product-level financial performance, enabling com
 - **Visual Support**: A bar chart provides a detailed breakdown of expense categories.
 
 **Explanation**:  
-The Expense Page helps identify major cost centers and taxation trends, offering actionable insights for cost optimization.
+The Expense Page helps identify major cost centers and assess overall expense trends. By understanding where the company’s funds are being allocated—particularly in areas such as taxation and operational expenses—stakeholders can develop strategies to optimize spending and improve profit margins.
 
 > ![Expense Screenshot](screenshots/expense_page.jpg)
 
@@ -107,10 +105,10 @@ The Expense Page helps identify major cost centers and taxation trends, offering
 
 ## Key Findings & Insights
 - **Sales Trends**: Notable trends indicate a decline in sales since 2017, suggesting underlying market or operational challenges.
-- **Channel Effectiveness**: Detailed analysis reveals which channels are most effective, guiding resource allocation.
+- **Channel Effectiveness**: Detailed analysis reveals which sales channels yield the highest returns, guiding resource allocation.
 - **Product Profitability**: Certain product categories consistently outperform others, providing opportunities for targeted investments.
 - **Expense Insights**: Significant expense categories and taxation trends have been identified, indicating areas for cost reduction.
-- **Focus on Actual Scenario**: By concentrating on the **actual scenario** from the **DimScenario** table, the report provides a realistic view of current performance, ensuring that decisions are based on actual outcomes rather than forecasts or budgets.
+- **Focus on Actual Scenario**: By concentrating on the **actual scenario** from the **DimScenario** table, the report provides a realistic view of current performance, ensuring decisions are based on real data rather than forecasts or budgets.
 
 ---
 
@@ -143,7 +141,7 @@ This report helps executives, partners, and marketing managers make effective bu
 ## How to Use This Project
 
 ### Power BI Report
-1. Download the `marketing_report.pbix` file.
+1. Download the `contoso_dw_marketing_report.pbix` file.
 2. Open it using **Power BI Desktop**.
 3. Interact with the dashboards to explore detailed insights and trends.
 
@@ -163,3 +161,4 @@ This report helps executives, partners, and marketing managers make effective bu
 ## References
 - [DataCamp Dataset](https://www.datacamp.com)  
 - Research papers on retail analytics, marketing strategies, and financial performance.
+
