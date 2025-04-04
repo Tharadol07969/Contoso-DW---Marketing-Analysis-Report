@@ -53,6 +53,8 @@ The analysis is based on data sourced from the Contoso Data Warehouse. The key t
 - Established robust relationships among the tables to create a cohesive data model.
 - Ensured that the **FactStrategyPlan** table aligns accurately with all dimensional tables.
 
+> ![Data Model Screenshot](screenshots/data_model.jpg)
+
 ---
 
 ## Report and Visualization
@@ -66,6 +68,7 @@ The analysis is based on data sourced from the Contoso Data Warehouse. The key t
 The Overview Page provides a high-level summary of overall marketing performance. It allows stakeholders to quickly gauge the company’s financial health and understand macro-level trends, such as changes in revenue and profit margins over time. This page is essential for identifying broad trends and areas that warrant further investigation.
 
 > ![Overview Screenshot](screenshots/overview_page.jpg)
+> ![Year Filter Screenshot](screenshots/year_filter.jpg)
 
 ---
 
