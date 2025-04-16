@@ -67,6 +67,8 @@ The analysis is based on data sourced from the Contoso Data Warehouse. The key t
 **Explanation**:  
 The Overview Page provides a high-level summary of overall marketing performance. It allows stakeholders to quickly gauge the company’s financial health and understand macro-level trends, such as changes in revenue and profit margins over time. This page is essential for identifying broad trends and areas that warrant further investigation.
 
+> ![Overview Screenshot](screenshots/overview_page.jpg)
+> ![Year Filter Screenshot](screenshots/year_filter.jpg)
 
 ---
 
@@ -78,7 +80,7 @@ The Overview Page provides a high-level summary of overall marketing performance
 **Explanation**:  
 The Channel Page facilitates a granular analysis of sales performance across various distribution channels. It helps determine which channels are most effective in driving sales and profitability. This information is crucial for optimizing channel strategies and ensuring resources are allocated effectively based on regional or channel-specific performance.
 
-
+> ![Channel Screenshot](screenshots/channel_page.jpg)
 
 ---
 
@@ -89,7 +91,7 @@ The Channel Page facilitates a granular analysis of sales performance across var
 **Explanation**:  
 The COGS Page offers insights into product-level financial performance. It allows decision-makers to compare sales and associated costs, thereby identifying which product categories are the most profitable. This analysis is vital for cost control, pricing strategy, and assessing the impact of operational efficiencies on profitability.
 
-
+> ![COGS Screenshot](screenshots/cogs_page.jpg)
 
 ---
 
@@ -100,6 +102,7 @@ The COGS Page offers insights into product-level financial performance. It allow
 **Explanation**:  
 The Expense Page helps identify major cost centers and assess overall expense trends. By understanding where the company’s funds are being allocated—particularly in areas such as taxation and operational expenses—stakeholders can develop strategies to optimize spending and improve profit margins.
 
+> ![COGS Screenshot](screenshots/cogs_page.jpg)
 
 ---
 
