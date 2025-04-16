@@ -61,7 +61,7 @@ The analysis is based on data sourced from the Contoso Data Warehouse. The key t
 
 ### Overview Page
 - **Key Metrics**: Displays total revenue, total profit, profit margin by year, and YoY % Change.
-- **Visualizations**: Includes charts for annual revenue, revenue by continent, and sales & gross profit by product category.
+- **Visualizations**: Includes charts for annual revenue, revenue by continent, and sales & last year sales by product category.
 - **Filter Options**: Users can filter annual sales data by year.
 
 **Explanation**:  
