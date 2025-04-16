@@ -102,7 +102,7 @@ The COGS Page offers insights into product-level financial performance. It allow
 **Explanation**:  
 The Expense Page helps identify major cost centers and assess overall expense trends. By understanding where the company’s funds are being allocated—particularly in areas such as taxation and operational expenses—stakeholders can develop strategies to optimize spending and improve profit margins.
 
-> ![COGS Screenshot](screenshots/cogs_page.jpg)
+> ![Expense Screenshot](screenshots/expense_page.jpg)
 
 ---
 
