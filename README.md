@@ -96,7 +96,7 @@ The COGS Page offers insights into product-level financial performance. It allow
 ---
 
 ### Expense Page
-- **Expense Analysis**: Presents detailed expense data, including revenue, total expense, total taxation, and YoY % Change.
+- **Expense Analysis**: Presents detailed expense data, total expense, total taxation, and YoY % Change.
 - **Visual Support**: A bar chart provides a detailed breakdown of expense categories.
 
 **Explanation**:  
