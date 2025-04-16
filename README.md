@@ -1,166 +1,138 @@
-# Contoso DW - Marketing Analysis Report
+# 📊 Contoso DW - Marketing Analysis Report
 
-This report provides a comprehensive analysis of the marketing performance for **Contoso DW**, a simulated online retail company. Leveraging data from the Contoso Data Warehouse and powered by **Power BI**, the report focuses on the **actual scenario** from the **DimScenario** table to evaluate sales performance, profitability, and expense trends across various channels. The insights generated are intended to inform strategic decision-making and optimize marketing initiatives.
+**Contoso DW** is a simulated online retail company. This Power BI report focuses on the **Actual** scenario from the **DimScenario** table to deliver actionable insights into sales performance, profitability, and expense trends across multiple channels. By translating raw data into clear visualizations, this dashboard empowers strategic decision-making and optimizes marketing investments.
 
 ---
 
-## Table of Contents
+## 📌 Table of Contents
 1. [Introduction](#introduction)  
 2. [Dataset Overview](#dataset-overview)  
 3. [Data Preparation](#data-preparation)  
-4. [Report and Visualization](#report-and-visualization)  
+4. [Report & Visualization](#report--visualization)  
    - [Overview Page](#overview-page)  
    - [Channel Page](#channel-page)  
-   - [Cost of Goods Sold (COGS) Page](#cost-of-goods-sold-cogs-page)  
+   - [COGS Page](#cogs-page)  
    - [Expense Page](#expense-page)  
 5. [Key Findings & Insights](#key-findings--insights)  
 6. [Business Impact & Decision Support](#business-impact--decision-support)  
-7. [How to Use This Project](#how-to-use-this-project)  
-8. [Future Work & Improvements](#future-work--improvements)  
-9. [References](#references)  
+7. [How to Use This Report](#how-to-use-this-report)  
+8. [Future Enhancements](#future-enhancements)  
+9. [References](#references)
 
 ---
 
 ## Introduction
-This report is designed to assess the overall marketing performance of **Contoso DW**. It examines sales performance across various channels, evaluates revenue and profit margins by product category, and analyzes expense trends over the years. Notably, the analysis focuses on the **actual scenario**—as defined in the **DimScenario** table—to provide an accurate reflection of current business conditions. The insights derived aim to support strategic decisions and optimize marketing efforts.
+This report evaluates **Contoso DW’s** marketing performance by analyzing real transaction data (Actual scenario) from the Data Warehouse. It examines revenue, costs, and expenses to identify trends, benchmark performance, and highlight areas for improvement.
 
 ---
 
 ## Dataset Overview
-The analysis is based on data sourced from the Contoso Data Warehouse. The key tables used in this report include:
+The analysis leverages the following tables:
 
-- **FactStrategyPlan**: Contains sales transaction data.
-- **DimAccount**: Provides detailed account information (Income, COGS, Expense, Taxation).
-- **DimDate**: Contains date-related attributes (e.g., date key, month name, quarter, year).
-- **DimEntity**: Includes information on the various sales channels.
-- **DimProductCategory**: Provides details on the product categories.
-- **DimScenario**: Contains scenario data (Actual, Budget, Forecast), with this report focusing on the **actual scenario**.
+- **FactStrategyPlan**: Sales transactions (Actual scenario)  
+- **DimAccount**: Account hierarchies (Income, COGS, Expense, Taxation)  
+- **DimDate**: Date attributes (day, month, quarter, year)  
+- **DimEntity**: Sales channels (Group, Country, State, Store)  
+- **DimProductCategory**: Product categories  
+- **DimScenario**: Scenario types (Actual, Budget, Forecast)  
+
+All visuals and metrics are filtered to show **Actual** data.
 
 ---
 
 ## Data Preparation
 
-### Data Inspection and Cleaning
-- Imported the dataset into **Power BI Desktop**.
-- Conducted a thorough inspection to remove duplicates, outliers, and errors.
-- Standardized data types and renamed tables for enhanced clarity.
-- Addressed hierarchical issues in **DimAccount** and **DimEntity** by splitting and restructuring the tables using Excel.
-  - **DimAccount** was split into **DimAccount** and **DimParentAccount** (comprising Income, COGS, Expense, and Taxation).
-  - **DimEntity** was restructured into separate tables: **DimEntityGroup**, **DimEntityCountry**, **DimEntityState**, and **DimEntityStore**.
-- Re-imported the cleaned data into Power BI.
+### 1. Data Inspection & Cleaning
+- Imported all tables into Power BI Desktop.  
+- Removed duplicates, corrected data types, and standardized naming conventions.  
+- Resolved hierarchies in `DimAccount` and `DimEntity` by splitting into parent/child tables.  
 
-### Data Model Relationships
-- Established robust relationships among the tables to create a cohesive data model.
-- Ensured that the **FactStrategyPlan** table aligns accurately with all dimensional tables.
+### 2. Data Modeling
+- Created a **Date** dimension for time intelligence.  
+- Defined relationships between fact and dimension tables for accurate filtering and aggregation.
 
-> ![Data Model Screenshot](screenshots/data_model.jpg)
+> ![Data Model](screenshots/data_model.jpg)
 
 ---
 
-## Report and Visualization
+## Report & Visualization
 
 ### Overview Page
-- **Key Metrics**: Displays total revenue, total profit, profit margin by year, and YoY % Change.
-- **Visualizations**: Includes charts for annual revenue, revenue by continent, and sales & last year sales by product category.
-- **Filter Options**: Users can filter annual sales data by year.
+- **KPIs**: Total Sales, Total Profit, Profit Margin, YoY % Change  
+- **Charts**: Annual revenue trends, sales by continent, product category comparisons  
+- **Filters**: Year selector for temporal analysis  
 
-**Explanation**:  
-The Overview Page provides a high-level summary of overall marketing performance. It allows stakeholders to quickly gauge the company’s financial health and understand macro-level trends, such as changes in revenue and profit margins over time. This page is essential for identifying broad trends and areas that warrant further investigation.
+**Purpose**: Offers an executive summary of financial performance and high-level trends.
 
-> ![Overview Screenshot](screenshots/overview_page.jpg)
+> ![Overview](screenshots/overview_page.jpg)
 > ![Year Filter Screenshot](screenshots/year_filter.jpg)
 
 ---
 
 ### Channel Page
-- **Sales Breakdown**: Presents detailed sales data segmented by channel.
-- **Hierarchical Details**: Includes a table displaying total sales and YoY % Change by continent, country, state, store, and online store.
-- **Interactive Filters**: Enables filtering by category, continent, and country.
+- **Total Sales**: Highlighted with YoY comparison  
+- **Sales by Continent**: Pie chart breakdown  
+- **Country, State & Store Details**: Tables showing top performers and growth rates  
 
-**Explanation**:  
-The Channel Page facilitates a granular analysis of sales performance across various distribution channels. It helps determine which channels are most effective in driving sales and profitability. This information is crucial for optimizing channel strategies and ensuring resources are allocated effectively based on regional or channel-specific performance.
+**Purpose**: Enables deep-dive into channel performance and geographic market analysis.
 
-> ![Channel Screenshot](screenshots/channel_page.jpg)
+> ![Channel](screenshots/channel_page.jpg)
 
 ---
 
-### Cost of Goods Sold (COGS) Page
-- **Financial Metrics**: Displays total sales, cost of goods sold (COGS), gross profit, gross profit margin, and YoY % Change.
-- **Filter Options**: Users can filter data by product category.
+### COGS Page
+- **Metrics**: Total Sales, Cost of Goods Sold, Gross Profit, Gross Profit Margin  
+- **Visuals**: Sales vs. COGS by category, monthly revenue bar chart, product-level table  
 
-**Explanation**:  
-The COGS Page offers insights into product-level financial performance. It allows decision-makers to compare sales and associated costs, thereby identifying which product categories are the most profitable. This analysis is vital for cost control, pricing strategy, and assessing the impact of operational efficiencies on profitability.
+**Purpose**: Evaluates product-level profitability and cost efficiency.
 
-> ![COGS Screenshot](screenshots/cogs_page.jpg)
+> ![COGS](screenshots/cogs_page.jpg)
 
 ---
 
 ### Expense Page
-- **Expense Analysis**: Presents detailed expense data, total expense, total taxation, and YoY % Change.
-- **Visual Support**: A bar chart provides a detailed breakdown of expense categories.
+- **Key Figures**: Total Expense, Taxation, YoY % Change  
+- **Visuals**: Expense & taxation trends by year, expense breakdown by account name  
 
-**Explanation**:  
-The Expense Page helps identify major cost centers and assess overall expense trends. By understanding where the company’s funds are being allocated—particularly in areas such as taxation and operational expenses—stakeholders can develop strategies to optimize spending and improve profit margins.
+**Purpose**: Identifies major cost drivers and taxation impacts to guide cost management.
 
-> ![Expense Screenshot](screenshots/expense_page.jpg)
+> ![Expense](screenshots/expense_page.jpg)
 
 ---
 
 ## Key Findings & Insights
-- **Sales Trends**: Notable trends indicate a decline in sales since 2017, suggesting underlying market or operational challenges.
-- **Channel Effectiveness**: Detailed analysis reveals which sales channels yield the highest returns, guiding resource allocation.
-- **Product Profitability**: Certain product categories consistently outperform others, providing opportunities for targeted investments.
-- **Expense Insights**: Significant expense categories and taxation trends have been identified, indicating areas for cost reduction.
-- **Focus on Actual Scenario**: By concentrating on the **actual scenario** from the **DimScenario** table, the report provides a realistic view of current performance, ensuring decisions are based on real data rather than forecasts or budgets.
+- **Sales Decline Since 2017**: Indicates market or operational challenges.  
+- **Channel Leaders**: North America drives 54% of sales; Asia growth at +16.9% YoY.  
+- **Product Profitability**: Home Appliances and Computers deliver the highest margins.  
+- **Expense Trends**: Human Capital and Property Costs dominate expenditures.  
 
 ---
 
 ## Business Impact & Decision Support
-This report helps executives, partners, and marketing managers make effective business decisions by:
-
-- **Clear Business Overview**:  
-  Displaying key metrics such as revenue, profit, and YoY changes allows decision-makers to quickly grasp overall performance.
-
-- **Trend Identification and Timing**:  
-  Analyzing annual and monthly sales trends helps identify periods of high or low performance, which is critical for strategic planning.
-
-- **Evaluation of Sales Channel Effectiveness**:  
-  Detailed insights on sales by channel enable targeted resource allocation and marketing strategy adjustments.
-
-- **Product Performance Analysis**:  
-  In-depth product-level insights allow for focused investments in high-performing product categories and improvements in underperforming areas.
-
-- **Cost Management**:  
-  Expense and taxation analysis provides a basis for cost reduction initiatives and better resource management.
-
-- **Focus on Actual Business Conditions**:  
-  Emphasizing the **actual scenario** ensures that decisions are based on real, up-to-date performance data.
-
-- **Strategic Planning Support**:  
-  The comprehensive insights support forecasting, budgeting, and long-term strategic planning efforts.
+This dashboard equips stakeholders to:
+- **Quickly Assess** overall financial health with executive KPIs.  
+- **Optimize Channel Strategy** by reallocating resources to high-growth markets.  
+- **Improve Profitability** through targeted cost controls and product focus.  
+- **Plan Strategically** with data-driven forecasts and scenario analysis.
 
 ---
 
-## How to Use This Project
-
-### Power BI Report
-1. Download the `contoso_dw_marketing_report.pbix` file.
-2. Open it using **Power BI Desktop**.
-3. Interact with the dashboards to explore detailed insights and trends.
-
-### Using Cleaned Data
-- The cleaned data files can be imported into **Python**, **R**, or **SQL** for further analysis.
+## How to Use This Report
+1. Download the Power BI file: `contoso_dw_marketing_report.pbix`  
+2. Open in **Power BI Desktop**  
+3. Navigate between Overview, Channel, COGS, and Expense pages  
+4. Use slicers (Year, Category, Continent) to filter data
 
 ---
 
-## Future Work & Improvements
-- **Dataset Expansion**: Incorporate additional datasets such as customer demographics and market trends for a more comprehensive analysis.
-- **Advanced Analytics**: Develop predictive models to forecast future sales and inventory needs.
-- **Cost Optimization**: Further analyze expense data to identify opportunities for cost reduction.
-- **Dashboard Enhancements**: Refine visualizations for improved clarity and interactivity.
+## Future Enhancements
+- Integrate real-time data feeds for live monitoring  
+- Add forecasting models for sales and expense projections  
+- Enhance visual interactivity with drill-through and bookmarks  
 
 ---
 
 ## References
-- [DataCamp Dataset](https://www.datacamp.com)  
-- Research papers on retail analytics, marketing strategies, and financial performance.
+- [DataCamp Dataset](https://www.datacamp.com)
+- Power BI documentation and best practices  
+- Industry research on retail analytics and cost management
