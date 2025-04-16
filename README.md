@@ -164,4 +164,3 @@ This report helps executives, partners, and marketing managers make effective bu
 ## References
 - [DataCamp Dataset](https://www.datacamp.com)  
 - Research papers on retail analytics, marketing strategies, and financial performance.
-
