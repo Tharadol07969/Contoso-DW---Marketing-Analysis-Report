@@ -103,7 +103,7 @@ All visuals and metrics are filtered to show **Actual** data.
 ## Key Findings & Insights
 - **Sales Decline Since 2017**: Indicates market or operational challenges.  
 - **Channel Leaders**: North America drives 54% of sales; Asia growth at +16.9% YoY.  
-- **Product Profitability**: Home Appliances and Computers deliver the highest margins.  
+- **Product Profitability**: Home Appliances have the highest revenue, and Cameras and camcorders have the highest margins.  
 - **Expense Trends**: Human Capital and Property Costs dominate expenditures.  
 
 ---
