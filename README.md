@@ -118,7 +118,7 @@ This dashboard equips stakeholders to:
 ---
 
 ## How to Use This Report
-1. Download the Power BI file: `contoso_dw_marketing_report.pbix`  
+1. Download the Power BI file: `marketing_report.pbix`  
 2. Open in **Power BI Desktop**  
 3. Navigate between Overview, Channel, COGS, and Expense pages  
 4. Use slicers (Year, Category, Continent) to filter data
