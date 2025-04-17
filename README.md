@@ -80,13 +80,13 @@ All visuals and metrics are filtered to show **Actual** data.
 
 ---
 
-### COGS Page
+### Product Page
 - **Metrics**: Total Sales, Cost of Goods Sold, Gross Profit, Gross Profit Margin  
 - **Visuals**: Sales vs. COGS by category, monthly revenue bar chart, product-level table  
 
 **Purpose**: Evaluates product-level profitability and cost efficiency.
 
-> ![COGS](screenshots/cogs_page.jpg)
+> ![Product](screenshots/product_page.jpg)
 
 ---
 
