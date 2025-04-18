@@ -11,7 +11,7 @@
 4. [Report & Visualization](#report--visualization)  
    - [Overview Page](#overview-page)  
    - [Channel Page](#channel-page)  
-   - [COGS Page](#cogs-page)  
+   - [Product Page](#product-page)  
    - [Expense Page](#expense-page)  
 5. [Key Findings & Insights](#key-findings--insights)  
 6. [Business Impact & Decision Support](#business-impact--decision-support)  
@@ -120,7 +120,7 @@ This dashboard equips stakeholders to:
 ## How to Use This Report
 1. Download the Power BI file: `marketing_report.pbix`  
 2. Open in **Power BI Desktop**  
-3. Navigate between Overview, Channel, COGS, and Expense pages  
+3. Navigate between Overview, Channel, Product, and Expense pages  
 4. Use slicers (Year, Category, Continent) to filter data
 
 ---
